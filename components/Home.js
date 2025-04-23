@@ -12,7 +12,7 @@ function Home() {
   
   useEffect(() => {
     const movieList = [];
-    fetch('http://localhost:3000/movies')
+    fetch('https://mymoviz-backend-lime.vercel.app/movies')
       .then(response => response.json())
       .then(data => {
         for (let i = 0; i < data.movies.length; i++) {
